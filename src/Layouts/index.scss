@@ -1,0 +1,11 @@
+#layout-wrapper {
+  height: 100vh;
+
+  .card-list.card {
+    height: calc(100vh - 155px);
+
+    .card-body {
+      overflow: auto;
+    }
+  }
+}

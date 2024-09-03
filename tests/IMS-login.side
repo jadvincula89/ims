@@ -1,0 +1,49 @@
+{
+  "id": "80ca5474-af6b-4857-8cf1-e2c25ab450d9",
+  "version": "2.0",
+  "name": "IMS",
+  "url": "https://ims.ggbdev.com/",
+  "tests": [{
+    "id": "e0438a5a-08d8-468c-8bb2-26247f16a484",
+    "name": "LOGIN",
+    "commands": [{
+      "id": "f2867b78-5b2a-4d4b-9051-1938e69d99de",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "718da314-49aa-4f6f-84b9-d76d6ac94040",
+      "comment": "",
+      "command": "assertValue",
+      "target": "name=email",
+      "targets": [],
+      "value": "jean@test.com"
+    }, {
+      "id": "dba9c180-bb1e-4a8d-95c5-6ef84e6d2a83",
+      "comment": "",
+      "command": "assertValue",
+      "target": "name=password",
+      "targets": [],
+      "value": "ze@yQuGyju"
+    }, {
+      "id": "ca1f0dc0-765c-494a-8eaa-0d9c0d72c749",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.btn-success",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "79a746e6-25ce-45d5-8cf2-d50197a9fa77",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://ims.ggbdev.com/"],
+  "plugins": []
+}

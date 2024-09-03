@@ -1,0 +1,29 @@
+.table-animation-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.table-animation-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition:
+    opacity 300ms,
+    transform 300ms;
+}
+
+.table-animation-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.table-animation-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition:
+    opacity 300ms,
+    transform 300ms;
+}
+
+#sub-table tbody tr {
+  cursor: pointer;
+}

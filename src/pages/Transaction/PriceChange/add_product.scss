@@ -1,0 +1,88 @@
+#AddProduct {
+  .img-upload-wrapper {
+    height: 241px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .dz-message {
+      z-index: 3;
+      opacity: 1;
+    }
+
+    &.with-img {
+      .dz-message {
+        opacity: 0;
+      }
+      &:hover {
+        .dz-message {
+          opacity: 1;
+        }
+
+        img {
+          opacity: 0.4;
+          z-index: 1;
+        }
+      }
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+  }
+}
+.filter-button {
+  margin-left: 73%;
+}
+#filter-div {
+  width: '400px !important';
+}
+.product-img {
+  object-fit: contain !important;
+}
+.flatpickr-months .flatpickr-month {
+  fill: #ffffffe6;
+  background: #0000;
+  color: #ffffffe6;
+  flex: 1 1;
+  height: 34px;
+  line-height: 1;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+span.flatpickr-weekday {
+  background: #4b38b3;
+  color: #fff;
+  cursor: default;
+  display: block;
+  flex: 1 1;
+  font-size: 90%;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+}
+.flatpickr-weekdays {
+  align-items: center;
+  background-color: #4b38b3;
+  border-bottom: 1px solid #e9ebec;
+  border-bottom: 1px solid var(--vz-border-color);
+  display: flex;
+  height: 36px;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
